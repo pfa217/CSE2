@@ -2,7 +2,10 @@
 // Homework 2
 // Arithmetic
 
+
 public class Arithmetic{
+    
+    // Main method
     public static void main(String[] args){
         int nSocks = 3; //number of pairs of socks
         double sockCost$ = 2.58;
