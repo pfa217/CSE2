@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
+// Begin class
 public class Bicycle{
     
+    // main method
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //Declare instance of Scanner class
+        //variables
         int seconds = 0;
         int counts = 0;
         double time2 = 0;
@@ -15,12 +18,14 @@ public class Bicycle{
         double mph = 0.0;
         double distance = 0.0;
         
+        // input
         System.out.print("Enter the number of seconds");
         seconds = scanner.nextInt();
         
         System.out.print("Enter the number of counts");
         counts = scanner.nextInt();
         
+        // Calculations
         distance = counts*diameter*PI;
         distance/=inchesPerFoot*feetPerMile;
         distance = (int)(distance*100)/100.0;
@@ -29,7 +34,8 @@ public class Bicycle{
         mph = distance/time2;
         mph = (int)(mph*100)/100.0;
         
+        // output
         System.out.println("The distance was "+ distance + " miles and took "+ time+ " minutes");
         System.out.println("The average mph was "+mph);
-    }
-}
+    } // end of Main method
+} // end of class
