@@ -1,3 +1,8 @@
+//// Pablo Aviles
+// Homework 1
+// Root
+// The program calculates the cubic root of a number that the user inputs
+
 import java.util.Scanner;
 
 // Begins Class

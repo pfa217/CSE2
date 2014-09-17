@@ -1,3 +1,8 @@
+//// Pablo Aviles
+// Homework 1
+// Bicycle
+// The program receives number of seconds and counts from the user and prints distance, time, and speed
+
 import java.util.Scanner;
 
 // Begin class
@@ -19,10 +24,10 @@ public class Bicycle{
         double distance = 0.0;
         
         // input
-        System.out.print("Enter the number of seconds");
+        System.out.print("Enter the number of seconds: ");
         seconds = scanner.nextInt();
         
-        System.out.print("Enter the number of counts");
+        System.out.print("Enter the number of counts: ");
         counts = scanner.nextInt();
         
         // Calculations
@@ -32,7 +37,7 @@ public class Bicycle{
         time = seconds/60;
         time2 = time/60;
         mph = distance/time2;
-        mph = (int)(mph*100)/100.0;
+        mph = ((int)(mph*100)/100.0);
         
         // output
         System.out.println("The distance was "+ distance + " miles and took "+ time+ " minutes");

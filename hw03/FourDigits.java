@@ -1,3 +1,8 @@
+//// Pablo Aviles
+// Homework 1
+// Welcome Class
+// The program will print the four digits after the decimal of a number that the user inputs.
+
 import java.util.Scanner;
 
 // Start of class
