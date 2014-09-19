@@ -11,6 +11,8 @@ public class BigMacAgain{
     
     // main method
     public static void main(String[] args){
+        
+        // variables
         Scanner scanner = new Scanner(System.in);
         double bigMacPrice = 2.22;
         double friesPrice  = 2.15;
@@ -20,33 +22,33 @@ public class BigMacAgain{
         int nFries = 0;
         
         
-        
+        // Input
         System.out.print("Enter the number of Big Macs: ");
-        if(scanner.hasNextInt()){
+        if(scanner.hasNextInt()){ // validates input
             nBigMac = scanner.nextInt();
             if(nBigMac>0){
                 meal = bigMacPrice*nBigMac;
                 System.out.println("You ordered "+nBigMac+" big macs for a cost of "+nBigMac+"x"+bigMacPrice+" = "+meal);
                 System.out.print("Do you want fries? (Y/y/N/n):");
                 answer = scanner.next();
-                if(answer.equals("Y") || answer.equals("y")){
+                if(answer.equals("Y") || answer.equals("y")){ // validates response
                     meal+= friesPrice;
                     System.out.println("You ordered fries at a cost of "+friesPrice);
                     System.out.println("The total price of the meal is "+(int)(meal*100)/100.0);
                 } else {
                     if(answer.equals("N") || answer.equals("n")){
-                    System.out.println("The total price of the meal is "+meal);
+                    System.out.println("The total price of the meal is "+meal); // output
                     } else {
-                    System.out.println("You entered a value other than Y, y, N, or n");
+                    System.out.println("You entered a value other than Y, y, N, or n"); // error message
                     }
                 }
                 
             }else {
-                System.out.println("You can not enter 0 or less");
+                System.out.println("You can not enter 0 or less"); // error message
                 return;
             }
         } else {
-            System.out.println("You did not enter an int");
+            System.out.println("You did not enter an int"); // error message
             return;
         }
         
