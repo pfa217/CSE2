@@ -50,7 +50,7 @@ public class BurgerKing {
                         switch (burgerChoice.charAt(0)) {
                             case 'A':
                             case 'a':
-                                System.out.println("You orderar a burger with all the fixins");
+                                System.out.println("You ordered a burger with all the fixins");
                                 break;
 
                             case 'C':
