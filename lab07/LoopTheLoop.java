@@ -16,7 +16,7 @@ public class LoopTheLoop {
         String cont = "y"; // Variable to ask if user wants to continue
 
         while (true) { // infinite look
-            System.out.println("Enter an int in between 1 and 15: ");
+            System.out.print("Enter an int in between 1 and 15: ");
             if (scanner.hasNextInt()) { // verify if user entered an integer
                 nStars = scanner.nextInt();
                 if (nStars >= 1 && nStars <= 15) { // verify if the number is in the correct range
@@ -36,7 +36,7 @@ public class LoopTheLoop {
                 System.out.println("Not an integer");
             }
 
-            System.out.println("Enter y or Y to go again: "); // ask user
+            System.out.print("Enter y or Y to go again: "); // ask user
             cont = scanner.next(); 
             if (!(cont.equals("y") || cont.equals("Y"))) { // if user does not want to continue infinite loop breaks
                 break; 
