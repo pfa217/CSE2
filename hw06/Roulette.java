@@ -27,7 +27,6 @@ public class Roulette {
                 if (numberComesUp >= 3) { // if the number came up 3 or more times the user earns the money
                     moneyEarned += numberComesUp*36;
                     timesWalkedAwayWMoney++;
-                    //moneyLeft += moneyEarned;
                 } else { // if not, the user lose money
                     timesLost++;
                     moneyEarned += numberComesUp*36;
