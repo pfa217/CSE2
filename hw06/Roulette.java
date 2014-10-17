@@ -35,7 +35,7 @@ public class Roulette {
             }
         
         // output
-        System.out.println("Total Earnings: " + moneyEarned + "\n" +
+        System.out.println("Total Earnings: " + (moneyEarned-100000) + "\n" +
                             "Times you walked away with money: " +timesWalkedAwayWMoney +"\n" +
                             "Times you lost money: "+timesLost);
 
