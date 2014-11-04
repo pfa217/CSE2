@@ -16,45 +16,12 @@ public class Methods {
 
     public static int getInt(Scanner scan) {
         int num = 0;
-        /*    num=scan.nextInt();
-            
-            if(!scan.hasNextInt()){
-                System.out.println("try again");
-                num=scan.nextInt();
-                //continue;
-                
-            }*/
-
-
-        //num=scan.nextInt();
-
-
-
-        boolean flag;
-    //    do {
-            // flag == false;
-            flag = false;
-
-            while (flag == false) {
-                if (scan.hasNextInt()) {
-                    num = scan.nextInt();
-                    flag = true;
-                }
-                else {
-                    System.out.println("You did not enter an int");
-                    continue;
-                }
-
-            }
-
-
-
-            //return num;
-   //     } while (!scan.hasNextInt());
-
+        while(!scan.hasNextInt()){
+            System.out.print("You did not enter an int; try again: ");
+            scan.next();
+        }
+        num = scan.nextInt();
         return num;
-
-
     }
 
     public static int larger(int a, int b) {
