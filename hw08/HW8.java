@@ -38,9 +38,9 @@ public class HW8 {
     }
 
     /**
-        Method takes a Scanner and a String then it asks the user enter one of the characters from the String.
-        The method then returns the character
-    */
+     *    Method takes a Scanner and a String then it asks the user enter one of the characters from the String.
+     *    The method then returns the character
+     */
     public static char getInput(Scanner scan, String list) {
         String in = scan.next();
         if ( in .length() > 1) {
@@ -58,9 +58,9 @@ public class HW8 {
     }
 
     /**
-        Method takes a Scanner, a String, and an int. Int is the number of attempts allowed, the user has to input a
-        one character String that matches one of the characters on the list. Then the method returns the character 
-    */
+     *    Method takes a Scanner, a String, and an int. Int is the number of attempts allowed, the user has to input a
+     *    one character String that matches one of the characters on the list. Then the method returns the character 
+     */
     public static char getInput(Scanner scan, String list, int attempts) {
         String in = scan.next();
         char ch = ' ';
@@ -83,10 +83,10 @@ public class HW8 {
     }
 
     /**
-        Method takes a Scanner, a String promt and another String. The user has to input what the prompt requires.
-        The program will continue prompting until the user enter the correct input.
-        The program returns the input
-    */
+     *   Method takes a Scanner, a String promt and another String. The user has to input what the prompt requires.
+     *   The program will continue prompting until the user enter the correct input.
+     *   The program returns the input
+     */
     public static char getInput(Scanner scan, String prompt, String string) {
 
         String input = "";
